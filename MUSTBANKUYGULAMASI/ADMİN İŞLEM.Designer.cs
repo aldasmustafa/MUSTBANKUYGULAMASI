@@ -30,12 +30,12 @@ namespace MUSTBANKUYGULAMASI
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,16 @@ namespace MUSTBANKUYGULAMASI
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ADMİN İŞLEMLERİ";
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(109, 141);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(257, 23);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "MÜŞTERİ GÜNCELLE\r\n";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -107,16 +117,7 @@ namespace MUSTBANKUYGULAMASI
             this.button1.TabIndex = 0;
             this.button1.Text = "MÜŞTERİ EKLE";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(109, 141);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(257, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "MÜŞTERİ GÜNCELLE\r\n";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ADMİN_İŞLEM
             // 

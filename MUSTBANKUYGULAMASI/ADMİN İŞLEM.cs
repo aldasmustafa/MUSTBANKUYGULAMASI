@@ -23,5 +23,11 @@ namespace MUSTBANKUYGULAMASI
             form.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MÜŞTERİ_EKLE yniekle = new MÜŞTERİ_EKLE();
+            yniekle.Show();
+        }
     }
 }

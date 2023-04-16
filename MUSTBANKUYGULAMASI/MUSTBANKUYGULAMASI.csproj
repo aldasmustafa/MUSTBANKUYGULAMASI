@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MÜŞTERİ EKLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MÜŞTERİ EKLE.Designer.cs">
+      <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
+    </Compile>
     <Compile Include="MÜŞTERİ İŞLEM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MÜŞTERİ EKLE.resx">
+      <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MÜŞTERİ İŞLEM.resx">
       <DependentUpon>MÜŞTERİ İŞLEM.cs</DependentUpon>
