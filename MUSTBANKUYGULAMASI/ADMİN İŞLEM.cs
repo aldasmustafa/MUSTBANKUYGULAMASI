@@ -29,5 +29,29 @@ namespace MUSTBANKUYGULAMASI
             MÜŞTERİ_EKLE yniekle = new MÜŞTERİ_EKLE();
             yniekle.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MÜŞTERİ_ARA mstriara = new MÜŞTERİ_ARA();
+            mstriara.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MÜŞTERİ_GÜNCELLE mstrignclle = new MÜŞTERİ_GÜNCELLE();
+            mstrignclle.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MÜŞTERİ_SİL mstrisil = new MÜŞTERİ_SİL();
+            mstrisil.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MÜŞTERİ_LİSTELE lstele = new MÜŞTERİ_LİSTELE();
+            lstele.Show();
+        }
     }
 }

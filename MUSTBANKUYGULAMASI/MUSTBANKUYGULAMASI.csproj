@@ -58,11 +58,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MÜŞTERİ ARA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MÜŞTERİ ARA.Designer.cs">
+      <DependentUpon>MÜŞTERİ ARA.cs</DependentUpon>
+    </Compile>
     <Compile Include="MÜŞTERİ EKLE.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MÜŞTERİ EKLE.Designer.cs">
       <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MÜŞTERİ GÜNCELLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MÜŞTERİ GÜNCELLE.Designer.cs">
+      <DependentUpon>MÜŞTERİ GÜNCELLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MÜŞTERİ LİSTELE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MÜŞTERİ LİSTELE.Designer.cs">
+      <DependentUpon>MÜŞTERİ LİSTELE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MÜŞTERİ SİL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MÜŞTERİ SİL.Designer.cs">
+      <DependentUpon>MÜŞTERİ SİL.cs</DependentUpon>
     </Compile>
     <Compile Include="MÜŞTERİ İŞLEM.cs">
       <SubType>Form</SubType>
@@ -78,8 +102,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MÜŞTERİ ARA.resx">
+      <DependentUpon>MÜŞTERİ ARA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MÜŞTERİ EKLE.resx">
       <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MÜŞTERİ GÜNCELLE.resx">
+      <DependentUpon>MÜŞTERİ GÜNCELLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MÜŞTERİ LİSTELE.resx">
+      <DependentUpon>MÜŞTERİ LİSTELE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MÜŞTERİ SİL.resx">
+      <DependentUpon>MÜŞTERİ SİL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MÜŞTERİ İŞLEM.resx">
       <DependentUpon>MÜŞTERİ İŞLEM.cs</DependentUpon>
