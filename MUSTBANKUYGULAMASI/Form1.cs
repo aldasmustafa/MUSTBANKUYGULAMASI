@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Firebase.Auth;
+using Firebase.Auth.Providers;
+using Firebase.Auth.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +22,24 @@ namespace MUSTBANKUYGULAMASI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Configure...
+            var config = new FirebaseAuthConfig
+            {
+                ApiKey = "AIzaSyAKiD6vvy9TN84x7wOYPTCrZYEeH47ZhDc",
+                AuthDomain = "mustbank-uygulamasi.firebaseapp.com",
+                Providers = new FirebaseAuthProvider[]
+                {
+             // Add and configure individual providers
+            new GoogleProvider().AddScopes("email"),
+            new EmailProvider()
+                    // ...
+                },
+              
+            };
+
+            // ...and create your FirebaseAuthClient
+            var client = new FirebaseAuthClient(config);
+
             string kulno = textBox1.Text;
             string sifre = textBox2.Text;
 
@@ -28,13 +49,7 @@ namespace MUSTBANKUYGULAMASI
                 ai.Show();
                 this.Hide();
             }
-            else if (kulno == "musteri" && sifre == "123")
-            {
-                MÜŞTERİ_İŞLEM mi = new MÜŞTERİ_İŞLEM();
-              
-                mi.Show();
-                this.Hide();
-            }
+           
         }
     }
 }
