@@ -23,5 +23,22 @@ namespace MUSTBANKUYGULAMASI
             form.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PARA_ÇEK pç = new PARA_ÇEK();
+            pç.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PARA_YATIR pç = new PARA_YATIR();
+            pç.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
