@@ -15,41 +15,18 @@ namespace MUSTBANKUYGULAMASI
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private string AuthDomain, ApiKey;
+        public Form1(string AuthDomain,string ApiKey)
         {
             InitializeComponent();
+            this.AuthDomain = AuthDomain;
+            this.ApiKey = ApiKey;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Configure...
-            var config = new FirebaseAuthConfig
-            {
-                ApiKey = "AIzaSyAKiD6vvy9TN84x7wOYPTCrZYEeH47ZhDc",
-                AuthDomain = "mustbank-uygulamasi.firebaseapp.com",
-                Providers = new FirebaseAuthProvider[]
-                {
-             // Add and configure individual providers
-            new GoogleProvider().AddScopes("email"),
-            new EmailProvider()
-                    // ...
-                },
-              
-            };
-
-            // ...and create your FirebaseAuthClient
-            var client = new FirebaseAuthClient(config);
-
-            string kulno = textBox1.Text;
-            string sifre = textBox2.Text;
-
-            if (kulno == "admin" && sifre == "mus123")
-            {
-                ADMİN_İŞLEM ai = new ADMİN_İŞLEM(); 
-                ai.Show();
-                this.Hide();
-            }
             
+
 
         }
     }
