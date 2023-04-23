@@ -19,7 +19,7 @@ namespace MUSTBANKUYGULAMASI
             config.Load("config.xml");
             string AuthDomain = config.DocumentElement.SelectSingleNode("/FireBase/AuthDomain").InnerText.Trim();
             string ApiKey = config.DocumentElement.SelectSingleNode("/FireBase/ApiKey").InnerText.Trim();
-
+           
            
 
 
