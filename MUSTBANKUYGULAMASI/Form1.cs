@@ -25,8 +25,8 @@ namespace MUSTBANKUYGULAMASI
 
             FirebaseAuthConfig config = new FirebaseAuthConfig
             {
-                ApiKey = "<API KEY>",
-                AuthDomain = "<DOMAIN>.firebaseapp.com",
+                ApiKey = "AIzaSyAKiD6vvy9TN84x7wOYPTCrZYEeH47ZhDc",
+                AuthDomain = "mustbank-uygulamasi.firebaseapp.com",
                 Providers = new FirebaseAuthProvider[]
                 {
                 new EmailProvider()},
@@ -51,7 +51,8 @@ namespace MUSTBANKUYGULAMASI
            
             try {
                 UserCredential kullanicikimligi = await client.SignInWithEmailAndPasswordAsync(this.textBox1.Text.Trim(),this.textBox2.Text.Trim());
-                MessageBox.Show(kullanicikimligi.User.Uid); 
+                MÜŞTERİ_İŞLEM mstri = new MÜŞTERİ_İŞLEM();
+                mstri.Show();
             
            }
             catch(Exception exc) 
