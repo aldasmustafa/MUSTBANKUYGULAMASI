@@ -51,7 +51,7 @@ namespace MUSTBANKUYGULAMASI
            
             try {
                 UserCredential kullanicikimligi = await client.SignInWithEmailAndPasswordAsync(this.textBox1.Text.Trim(),this.textBox2.Text.Trim());
-                MÜŞTERİ_İŞLEM mstri = new MÜŞTERİ_İŞLEM();
+                MÜŞTERİ_İŞLEM mstri = new MÜŞTERİ_İŞLEM(kullanicikimligi);
                 mstri.Show();
             
            }

@@ -12,6 +12,7 @@ namespace MUSTBANKUYGULAMASI
 {
     public partial class PARA_ÇEK : Form
     {
+     
         public PARA_ÇEK()
         {
             InitializeComponent();
@@ -20,6 +21,10 @@ namespace MUSTBANKUYGULAMASI
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

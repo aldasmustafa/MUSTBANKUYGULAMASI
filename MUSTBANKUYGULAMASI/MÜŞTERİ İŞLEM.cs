@@ -7,14 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Firebase.Auth;
+using Firebase.Database;
 
 namespace MUSTBANKUYGULAMASI
 {
     public partial class MÜŞTERİ_İŞLEM : Form
     {
-        public MÜŞTERİ_İŞLEM()
+        private UserCredential kullanicikimligi;
+        public MÜŞTERİ_İŞLEM(UserCredential kullanicikimligi)
         {
             InitializeComponent();
+            this.kullanicikimligi = kullanicikimligi;
+
+            try
+            { 
+            var firebaseClient = new FirebaseClient("https://mustbank-uygulamasi-default-rtdb.firebaseio.com/:",
+                                                    new FirebaseOptions
+                                                    {
+                                                    AuthTokenAsyncFactory = () => kullanicikimligi.User.GetIdTokenAsync()
+                                                    });
+                MessageBox.Show("firebase realtime database için istemci oluşturuldu");
+            } catch(Exception exc)
+            {
+                MessageBox.Show("mesaj:" + exc.Message, "hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -38,7 +55,7 @@ namespace MUSTBANKUYGULAMASI
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
