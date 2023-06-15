@@ -50,9 +50,10 @@ namespace MUSTBANKUYGULAMASI
           
            
             try {
-                UserCredential kullanicikimligi = await client.SignInWithEmailAndPasswordAsync(this.textBox1.Text.Trim(),this.textBox2.Text.Trim());
-                MÜŞTERİ_İŞLEM mstri = new MÜŞTERİ_İŞLEM(kullanicikimligi);
-                mstri.Show();
+                UserCredential admnkmligi = await client.SignInWithEmailAndPasswordAsync(this.textBox1.Text.Trim(),this.textBox2.Text.Trim());
+                  MUSTERİ_İSLEM mstri = new MUSTERİ_İSLEM(admnkmligi);
+                  mstri.Show();
+              //  ADMİN_İŞLEM admn = new ADMİN_İŞLEM(admnkmligi);
             
            }
             catch(Exception exc) 

@@ -12,10 +12,10 @@ using Firebase.Database;
 
 namespace MUSTBANKUYGULAMASI
 {
-    public partial class MÜŞTERİ_İŞLEM : Form
+    public partial class MUSTERİ_İSLEM : Form
     {
         private UserCredential kullanicikimligi;
-        public MÜŞTERİ_İŞLEM(UserCredential kullanicikimligi)
+        public MUSTERİ_İSLEM(UserCredential kullanicikimligi)
         {
             InitializeComponent();
             this.kullanicikimligi = kullanicikimligi;
@@ -56,6 +56,16 @@ namespace MUSTBANKUYGULAMASI
         private void button3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MUSTERİ_İSLEM_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

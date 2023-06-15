@@ -1,7 +1,7 @@
 ﻿
 namespace MUSTBANKUYGULAMASI
 {
-    partial class MÜŞTERİ_İŞLEM
+    partial class MUSTERİ_İSLEM
     {
         /// <summary>
         /// Required designer variable.
@@ -48,10 +48,11 @@ namespace MUSTBANKUYGULAMASI
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(121, 71);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(559, 308);
+            this.groupBox1.Size = new System.Drawing.Size(559, 322);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "MÜŞTERİ İŞLEMLERİ";
+            this.groupBox1.Text = "ADMİN İŞLEMLERİ";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button5
             // 
@@ -73,7 +74,7 @@ namespace MUSTBANKUYGULAMASI
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(257, 23);
             this.button4.TabIndex = 3;
-            this.button4.Text = "HESAP HAREKETLERİ";
+            this.button4.Text = "MÜŞTERİ SİL";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -83,7 +84,7 @@ namespace MUSTBANKUYGULAMASI
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(257, 23);
             this.button3.TabIndex = 2;
-            this.button3.Text = "BAKİYE GÖRÜNTÜLE";
+            this.button3.Text = "MÜŞTERİ LİSTELE";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -94,7 +95,7 @@ namespace MUSTBANKUYGULAMASI
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(257, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "PARA YATIR";
+            this.button2.Text = "MÜŞTERİ GÜNCELLE";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -105,18 +106,19 @@ namespace MUSTBANKUYGULAMASI
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(257, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "PARA ÇEK";
+            this.button1.Text = "MÜŞTERİ EKLE";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // MÜŞTERİ_İŞLEM
+            // MUSTERİ_İSLEM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Name = "MÜŞTERİ_İŞLEM";
-            this.Text = "MÜŞTERİ_İŞLEM";
+            this.Name = "MUSTERİ_İSLEM";
+            this.Text = "ADMİN İŞLEM";
+            this.Load += new System.EventHandler(this.MUSTERİ_İSLEM_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
