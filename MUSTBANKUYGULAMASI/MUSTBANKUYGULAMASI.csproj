@@ -217,6 +217,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="müşteri.cs" />
     <Compile Include="MÜŞTERİ ARA.cs">
       <SubType>Form</SubType>
     </Compile>

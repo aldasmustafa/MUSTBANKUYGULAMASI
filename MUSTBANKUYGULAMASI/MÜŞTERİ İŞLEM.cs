@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Firebase.Database.Query;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace MUSTBANKUYGULAMASI
     public partial class MUSTERİ_İSLEM : Form
     {
         private UserCredential kullanicikimligi;
+        private FirebaseClient firebase_istemci;
         public MUSTERİ_İSLEM(UserCredential kullanicikimligi)
         {
             InitializeComponent();
@@ -22,7 +24,7 @@ namespace MUSTBANKUYGULAMASI
 
             try
             { 
-            var firebaseClient = new FirebaseClient("https://mustbank-uygulamasi-default-rtdb.firebaseio.com/:",
+            firebase_istemci = new FirebaseClient("https://mustbank-uygulamasi-default-rtdb.firebaseio.com/:",
                                                     new FirebaseOptions
                                                     {
                                                     AuthTokenAsyncFactory = () => kullanicikimligi.User.GetIdTokenAsync()
@@ -41,10 +43,11 @@ namespace MUSTBANKUYGULAMASI
             this.Close();*/
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            PARA_ÇEK pç = new PARA_ÇEK();
-            pç.Show();
+            await firebase_istemci.Child("müşteriler").Child("57610618874").Child("isim").PutAsync<string>("mustafa");
+            await firebase_istemci.Child("müşteriler").Child("57610618874").Child("soyad").PutAsync<string>("aldaş");
+
         }
 
         private void button2_Click(object sender, EventArgs e)
