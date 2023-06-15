@@ -8,6 +8,7 @@ namespace MUSTBANKUYGULAMASI
 {
     public class musteri
     {
-        public double Height { get; set; }
+        public string isim { get; set; }
+        public string soyad { get; set; }
     }
 }

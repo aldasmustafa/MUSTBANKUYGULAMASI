@@ -45,9 +45,21 @@ namespace MUSTBANKUYGULAMASI
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            await firebase_istemci.Child("müşteriler").Child("57610618874").Child("isim").PutAsync<string>("mustafa");
-            await firebase_istemci.Child("müşteriler").Child("57610618874").Child("soyad").PutAsync<string>("aldaş");
+            musteri mstr1 = new musteri();
+            mstr1.isim = "mustafa";
+            mstr1.soyad = "aldas";
 
+            musteri mstr2 = new musteri();
+            mstr2.isim = "ramazan";
+            mstr2.soyad = "doğan";
+
+            await firebase_istemci.Child("müşteriler").Child("57610618874").PutAsync(mstr1);
+            await firebase_istemci.Child("müşteriler").Child("10885218872").PutAsync(mstr2);
+
+            //await firebase_istemci.Child("müşteriler").Child("57610618874").Child("isim").PutAsync<string>("mustafa");
+           // await firebase_istemci.Child("müşteriler").Child("57610618874").Child("soyad").PutAsync<string>("aldaş");
+           // await firebase_istemci.Child("müşteriler").Child("10885218872").Child("isim").PutAsync<string>("mustafa");
+           // await firebase_istemci.Child("müşteriler").Child("10885218872").Child("soyad").PutAsync<string>("aldaş");
         }
 
         private void button2_Click(object sender, EventArgs e)
