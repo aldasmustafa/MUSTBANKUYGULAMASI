@@ -50,8 +50,7 @@ namespace MUSTBANKUYGULAMASI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MÜŞTERİ_LİSTELE lstele = new MÜŞTERİ_LİSTELE();
-            lstele.Show();
+         
         }
     }
 }

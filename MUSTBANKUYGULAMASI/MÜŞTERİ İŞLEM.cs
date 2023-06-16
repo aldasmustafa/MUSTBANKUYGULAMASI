@@ -30,6 +30,7 @@ namespace MUSTBANKUYGULAMASI
                                                     AuthTokenAsyncFactory = () => kullanicikimligi.User.GetIdTokenAsync()
                                                     });
                 MessageBox.Show("firebase realtime database için istemci oluşturuldu");
+                
             } catch(Exception exc)
             {
                 MessageBox.Show("mesaj:" + exc.Message, "hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -62,6 +63,7 @@ namespace MUSTBANKUYGULAMASI
            // await firebase_istemci.Child("müşteriler").Child("10885218872").Child("soyad").PutAsync<string>("aldaş");
         }
 
+      
         private void button2_Click(object sender, EventArgs e)
         {
             PARA_YATIR pç = new PARA_YATIR();
@@ -70,7 +72,8 @@ namespace MUSTBANKUYGULAMASI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            müşteri_listele ml = new müşteri_listele(firebase_istemci);
+            ml.Show();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
