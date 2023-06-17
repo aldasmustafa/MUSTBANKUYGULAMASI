@@ -46,16 +46,19 @@ namespace MUSTBANKUYGULAMASI
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            musteri mstr1 = new musteri();
-            mstr1.isim = "mustafa";
-            mstr1.soyad = "aldas";
+            müşteri_ekle me = new müşteri_ekle(firebase_istemci);
+            me.Show();
 
-            musteri mstr2 = new musteri();
-            mstr2.isim = "ramazan";
-            mstr2.soyad = "doğan";
+            //musteri mstr1 = new musteri();
+            //mstr1.isim = "mustafa";
+            //mstr1.soyad = "aldas";
 
-            await firebase_istemci.Child("müşteriler").Child("57610618874").PutAsync(mstr1);
-            await firebase_istemci.Child("müşteriler").Child("10885218872").PutAsync(mstr2);
+            //musteri mstr2 = new musteri();
+            //mstr2.isim = "ramazan";
+            //mstr2.soyad = "doğan";
+
+            //await firebase_istemci.Child("müşteriler").Child("57610618874").PutAsync(mstr1);
+            //await firebase_istemci.Child("müşteriler").Child("10885218872").PutAsync(mstr2);
 
             //await firebase_istemci.Child("müşteriler").Child("57610618874").Child("isim").PutAsync<string>("mustafa");
            // await firebase_istemci.Child("müşteriler").Child("57610618874").Child("soyad").PutAsync<string>("aldaş");
@@ -66,8 +69,7 @@ namespace MUSTBANKUYGULAMASI
       
         private void button2_Click(object sender, EventArgs e)
         {
-            PARA_YATIR pç = new PARA_YATIR();
-            pç.Show();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

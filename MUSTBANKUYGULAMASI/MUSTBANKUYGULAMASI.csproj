@@ -217,6 +217,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="müşteri ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşteri ekle.Designer.cs">
+      <DependentUpon>müşteri ekle.cs</DependentUpon>
+    </Compile>
     <Compile Include="müşteri listele.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,12 +260,6 @@
     <Compile Include="MÜŞTERİ İŞLEM.Designer.cs">
       <DependentUpon>MÜŞTERİ İŞLEM.cs</DependentUpon>
     </Compile>
-    <Compile Include="PARA YATIR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PARA YATIR.Designer.cs">
-      <DependentUpon>PARA YATIR.cs</DependentUpon>
-    </Compile>
     <Compile Include="PARA ÇEK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müşteri ekle.resx">
+      <DependentUpon>müşteri ekle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="müşteri listele.resx">
       <DependentUpon>müşteri listele.cs</DependentUpon>
@@ -294,9 +297,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MÜŞTERİ İŞLEM.resx">
       <DependentUpon>MÜŞTERİ İŞLEM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PARA YATIR.resx">
-      <DependentUpon>PARA YATIR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PARA ÇEK.resx">
       <DependentUpon>PARA ÇEK.cs</DependentUpon>
