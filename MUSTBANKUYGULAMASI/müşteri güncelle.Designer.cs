@@ -1,7 +1,7 @@
 ﻿
 namespace MUSTBANKUYGULAMASI
 {
-    partial class müşteri_listele
+    partial class müşteri_güncelle
     {
         /// <summary>
         /// Required designer variable.
@@ -35,24 +35,22 @@ namespace MUSTBANKUYGULAMASI
             // 
             // musterilerdtg
             // 
-            this.musterilerdtg.AllowUserToAddRows = false;
-            this.musterilerdtg.AllowUserToDeleteRows = false;
             this.musterilerdtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.musterilerdtg.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.musterilerdtg.Location = new System.Drawing.Point(12, 43);
+            this.musterilerdtg.Location = new System.Drawing.Point(41, 40);
             this.musterilerdtg.Name = "musterilerdtg";
             this.musterilerdtg.Size = new System.Drawing.Size(665, 366);
-            this.musterilerdtg.TabIndex = 0;
+            this.musterilerdtg.TabIndex = 1;
+            this.musterilerdtg.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.musterilerdtg_CellMouseClick);
             // 
-            // müşteri_listele
+            // müşteri_güncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.musterilerdtg);
-            this.Name = "müşteri_listele";
-            this.Text = "müşteri_listele";
-            this.Load += new System.EventHandler(this.müşteri_listele_Load);
+            this.Name = "müşteri_güncelle";
+            this.Text = "müşteri_güncelle";
+            this.Load += new System.EventHandler(this.müşteri_güncelle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.musterilerdtg)).EndInit();
             this.ResumeLayout(false);
 

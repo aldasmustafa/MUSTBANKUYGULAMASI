@@ -38,8 +38,7 @@ namespace MUSTBANKUYGULAMASI
 
         private void button6_Click(object sender, EventArgs e)
         {
-            MÜŞTERİ_GÜNCELLE mstrignclle = new MÜŞTERİ_GÜNCELLE();
-            mstrignclle.Show();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)

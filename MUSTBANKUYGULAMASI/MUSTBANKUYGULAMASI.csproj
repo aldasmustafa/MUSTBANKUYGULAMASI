@@ -223,6 +223,12 @@
     <Compile Include="müşteri ekle.Designer.cs">
       <DependentUpon>müşteri ekle.cs</DependentUpon>
     </Compile>
+    <Compile Include="müşteri güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşteri güncelle.Designer.cs">
+      <DependentUpon>müşteri güncelle.cs</DependentUpon>
+    </Compile>
     <Compile Include="müşteri listele.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,12 +247,6 @@
     </Compile>
     <Compile Include="MÜŞTERİ EKLE.Designer.cs">
       <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MÜŞTERİ GÜNCELLE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MÜŞTERİ GÜNCELLE.Designer.cs">
-      <DependentUpon>MÜŞTERİ GÜNCELLE.cs</DependentUpon>
     </Compile>
     <Compile Include="MÜŞTERİ SİL.cs">
       <SubType>Form</SubType>
@@ -280,6 +280,9 @@
     <EmbeddedResource Include="müşteri ekle.resx">
       <DependentUpon>müşteri ekle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="müşteri güncelle.resx">
+      <DependentUpon>müşteri güncelle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="müşteri listele.resx">
       <DependentUpon>müşteri listele.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,9 +291,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MÜŞTERİ EKLE.resx">
       <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MÜŞTERİ GÜNCELLE.resx">
-      <DependentUpon>MÜŞTERİ GÜNCELLE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MÜŞTERİ SİL.resx">
       <DependentUpon>MÜŞTERİ SİL.cs</DependentUpon>

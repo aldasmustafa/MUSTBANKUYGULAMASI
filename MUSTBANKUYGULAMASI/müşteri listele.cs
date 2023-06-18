@@ -45,6 +45,7 @@ namespace MUSTBANKUYGULAMASI
                 }
 
                 musterilerdtg.DataSource = musteriler_table;
+                
             }
         }
     }

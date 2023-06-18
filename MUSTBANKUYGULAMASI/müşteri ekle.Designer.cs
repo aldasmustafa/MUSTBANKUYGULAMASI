@@ -61,6 +61,7 @@ namespace MUSTBANKUYGULAMASI
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(240, 20);
             this.textBox6.TabIndex = 3;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox4
             // 
@@ -68,6 +69,7 @@ namespace MUSTBANKUYGULAMASI
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(240, 20);
             this.textBox4.TabIndex = 2;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
@@ -75,6 +77,7 @@ namespace MUSTBANKUYGULAMASI
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(240, 20);
             this.textBox3.TabIndex = 5;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -82,6 +85,7 @@ namespace MUSTBANKUYGULAMASI
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(240, 20);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -89,6 +93,7 @@ namespace MUSTBANKUYGULAMASI
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(240, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label6
             // 
@@ -99,6 +104,7 @@ namespace MUSTBANKUYGULAMASI
             this.label6.Size = new System.Drawing.Size(62, 16);
             this.label6.TabIndex = 18;
             this.label6.Text = "ADRES=";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -109,6 +115,7 @@ namespace MUSTBANKUYGULAMASI
             this.label5.Size = new System.Drawing.Size(151, 16);
             this.label5.TabIndex = 17;
             this.label5.Text = "TELEFON NUMARASI=";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -119,6 +126,7 @@ namespace MUSTBANKUYGULAMASI
             this.label4.Size = new System.Drawing.Size(36, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "TC =";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -129,6 +137,7 @@ namespace MUSTBANKUYGULAMASI
             this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 15;
             this.label3.Text = "SOYAD =";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -139,6 +148,7 @@ namespace MUSTBANKUYGULAMASI
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 14;
             this.label2.Text = "İSİM =";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -150,6 +160,7 @@ namespace MUSTBANKUYGULAMASI
             this.label1.Size = new System.Drawing.Size(189, 24);
             this.label1.TabIndex = 13;
             this.label1.Text = "MÜŞTERİ EKLEME";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // müşteri_ekle
             // 
@@ -178,16 +189,16 @@ namespace MUSTBANKUYGULAMASI
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox2;
     }
 }

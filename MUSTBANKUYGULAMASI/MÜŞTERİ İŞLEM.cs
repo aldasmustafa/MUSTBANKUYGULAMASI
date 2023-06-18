@@ -48,6 +48,7 @@ namespace MUSTBANKUYGULAMASI
         {
             müşteri_ekle me = new müşteri_ekle(firebase_istemci);
             me.Show();
+            
 
             //musteri mstr1 = new musteri();
             //mstr1.isim = "mustafa";
@@ -69,7 +70,8 @@ namespace MUSTBANKUYGULAMASI
       
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            müşteri_güncelle mg = new müşteri_güncelle(firebase_istemci);
+            mg.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
