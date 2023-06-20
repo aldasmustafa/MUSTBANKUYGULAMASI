@@ -29,6 +29,7 @@ namespace MUSTBANKUYGULAMASI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -37,11 +38,15 @@ namespace MUSTBANKUYGULAMASI
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.login_pb = new System.Windows.Forms.ProgressBar();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.login_pb);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -105,13 +110,27 @@ namespace MUSTBANKUYGULAMASI
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(222, 180);
+            this.button1.Location = new System.Drawing.Point(226, 164);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 34);
             this.button1.TabIndex = 4;
             this.button1.Text = "GİRİŞ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // login_pb
+            // 
+            this.login_pb.Location = new System.Drawing.Point(230, 214);
+            this.login_pb.Name = "login_pb";
+            this.login_pb.Size = new System.Drawing.Size(100, 23);
+            this.login_pb.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.login_pb.TabIndex = 8;
+            this.login_pb.Visible = false;
+            this.login_pb.Click += new System.EventHandler(this.login_pb_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Form1
             // 
@@ -124,6 +143,7 @@ namespace MUSTBANKUYGULAMASI
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -135,8 +155,10 @@ namespace MUSTBANKUYGULAMASI
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.ProgressBar login_pb;
+        public System.Windows.Forms.Button button1;
     }
 }
 

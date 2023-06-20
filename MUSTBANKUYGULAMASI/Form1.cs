@@ -59,11 +59,22 @@ namespace MUSTBANKUYGULAMASI
 
         }
 
+        private void login_pb_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private async void button1_Click(object sender, EventArgs e)
         {
+            
           
-           
+          
             try {
+
+
+                button1.Enabled = false;
+                login_pb.Visible = true;
+
                 UserCredential admnkmligi = await client.SignInWithEmailAndPasswordAsync(this.textBox1.Text.Trim(),this.textBox2.Text.Trim());
                   MUSTERİ_İSLEM mstri = new MUSTERİ_İSLEM(admnkmligi);
                   mstri.Show();
@@ -72,11 +83,14 @@ namespace MUSTBANKUYGULAMASI
            }
             catch(Exception exc) 
             {
+                button1.Enabled = true;
+                login_pb.Visible = false;
                 MessageBox.Show("hata:" + exc.Message);
             }
             finally
             {
-
+                button1.Enabled = true;
+                login_pb.Visible = false;
             }
             
         }

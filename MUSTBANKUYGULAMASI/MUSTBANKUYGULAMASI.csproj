@@ -199,18 +199,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADMİN İŞLEM.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ADMİN İŞLEM.Designer.cs">
-      <DependentUpon>ADMİN İŞLEM.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BAKİYE GORUNTULE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BAKİYE GORUNTULE.Designer.cs">
-      <DependentUpon>BAKİYE GORUNTULE.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,38 +230,14 @@
       <DependentUpon>müşteri listele.cs</DependentUpon>
     </Compile>
     <Compile Include="müşteri.cs" />
-    <Compile Include="MÜŞTERİ ARA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MÜŞTERİ ARA.Designer.cs">
-      <DependentUpon>MÜŞTERİ ARA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MÜŞTERİ EKLE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MÜŞTERİ EKLE.Designer.cs">
-      <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
-    </Compile>
     <Compile Include="MÜŞTERİ İŞLEM.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MÜŞTERİ İŞLEM.Designer.cs">
       <DependentUpon>MÜŞTERİ İŞLEM.cs</DependentUpon>
     </Compile>
-    <Compile Include="PARA ÇEK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PARA ÇEK.Designer.cs">
-      <DependentUpon>PARA ÇEK.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ADMİN İŞLEM.resx">
-      <DependentUpon>ADMİN İŞLEM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BAKİYE GORUNTULE.resx">
-      <DependentUpon>BAKİYE GORUNTULE.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,17 +253,8 @@
     <EmbeddedResource Include="müşteri listele.resx">
       <DependentUpon>müşteri listele.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MÜŞTERİ ARA.resx">
-      <DependentUpon>MÜŞTERİ ARA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MÜŞTERİ EKLE.resx">
-      <DependentUpon>MÜŞTERİ EKLE.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MÜŞTERİ İŞLEM.resx">
       <DependentUpon>MÜŞTERİ İŞLEM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PARA ÇEK.resx">
-      <DependentUpon>PARA ÇEK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
