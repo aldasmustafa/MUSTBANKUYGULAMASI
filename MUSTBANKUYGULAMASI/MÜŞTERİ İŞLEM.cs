@@ -39,9 +39,10 @@ namespace MUSTBANKUYGULAMASI
 
         private void button5_Click(object sender, EventArgs e)
         {
-           /* Form1 form = new Form1();
-            form.Show();
-            this.Close();*/
+            /* Form1 form = new Form1();
+             form.Show();
+             this.Close();*/
+           
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -88,6 +89,12 @@ namespace MUSTBANKUYGULAMASI
         private void MUSTERİ_İSLEM_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           mssil ms = new mssil(firebase_istemci);
+           ms.Show();
         }
     }
 }

@@ -43,8 +43,7 @@ namespace MUSTBANKUYGULAMASI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MÜŞTERİ_SİL mstrisil = new MÜŞTERİ_SİL();
-            mstrisil.Show();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
