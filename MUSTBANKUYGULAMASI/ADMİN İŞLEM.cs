@@ -19,7 +19,7 @@ namespace MUSTBANKUYGULAMASI
 
         private void button5_Click(object sender, EventArgs e)
         {
-          /* Form1 form = new Form1();
+           /* Form1 form = new Form1();
             form.Show();
             this.Close();*/
         }

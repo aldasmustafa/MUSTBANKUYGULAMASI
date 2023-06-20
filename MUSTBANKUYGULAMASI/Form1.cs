@@ -37,12 +37,26 @@ namespace MUSTBANKUYGULAMASI
             this.client = new FirebaseAuthClient(config);
         }
 
+        public Form1()
+        {
+        }
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
                 textBox2.PasswordChar = '\0';
             else
                 textBox2.PasswordChar = '*';
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
         private async void button1_Click(object sender, EventArgs e)

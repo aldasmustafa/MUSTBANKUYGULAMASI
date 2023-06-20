@@ -35,6 +35,8 @@ namespace MUSTBANKUYGULAMASI
             // 
             // musterilerdtg
             // 
+            this.musterilerdtg.AllowUserToAddRows = false;
+            this.musterilerdtg.AllowUserToDeleteRows = false;
             this.musterilerdtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.musterilerdtg.Location = new System.Drawing.Point(68, 42);
             this.musterilerdtg.Name = "musterilerdtg";
